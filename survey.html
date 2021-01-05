@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+        background-image: 
+            /* top, transparent */
+            linear-gradient(
+            rgba(255, 145, 0, 0.678), 
+            rgba(255, 145, 0, 0.678)
+            ),
+            /* image */
+            url(images/backgroundimage.jpg);
+            background-size: cover;
+        }
+        
+
+        #main-head {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 700;
+        }
+
+        #sub-head {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 600;
+        }
+
+        .form-group {
+            color: white;
+            font-family: 'Arimo', sans-serif;
+            font-weight: 400;
+        }
+    </style>
+
 </head>
 
 <body>
+    <div class="background">
+        <div class="layer">
+        </div>
+    </div>
     <h1 id="main-head"> <!--This is the survey title-->
         Survey on Rural Access to Technology Education
     </h1>
     <h2 id="sub-head"> <!--This is the subtitle for the survey form-->
-        Thank you for taking the time to contribute your experiences to our research. This data is collected to better understand how access to technology education differs in rural, suburban, and urban areas. All data is confidential and will not be shared with anyone outside of our research team. 
+        Thank you for taking the time to contribute your experiences to our research. This data is collected to better understand how access to technology education differs in rural, suburban, and urban areas. All data is confidential and will not be shared with anyone outside of our research team. No questions require an answer; please feel free to skip questions you do not feel comfortable answering.
     </h2>
     <form id="survey-form">
         <div class="form-group"> <!--This is for the name-->
@@ -33,6 +73,50 @@
         <div class="form-group"> <!--This is for pronouns-->
             <label id="pronoun-label" for="pronouns">Preferred Pronouns</label>
             <input type="text" name="pronouns" id="pronouns" class="form-control" placeholder="Enter your preferred pronouns (he/him, she/her, they/them, etc.)">
+        </div>
+        <div class="form-group"> <!--This is for age-->
+            <label id="age-label" for="age">age</label>
+            <input type="number" name="age" id="age" min="15" max="100" class="form-control" placeholder="Enter your age">
+        </div>
+        <div class="form-group"> <!--This is for race-->
+            <label id="race-label" for="race">Race</label>
+            <input type="text" name="race" id="race" class="form-control" placeholder="Enter your race">
+        </div>
+        <div class="form-group"> <!--This is for sexual orientation-->
+            <label id="orientation-label" for="Orientation">Sexual Orientation</label>
+            <input type="text" name="orientation" id="orientation" class="form-control" placeholder="Enter your sexual orientation">
+        </div>
+        <div class="form-group"> <!--This is for city or county-->
+            <label id="city-label" for="city">High School City or County</label>
+            <input type="text" name="city" id="city" class="form-control" placeholder="Enter the city or county in which your highschool was located">
+        </div>
+        <div class="form-group"> <!--This is for state-->
+            <label id="state-label" for="state">High School State</label>
+            <input type="text" name="state" id="state" class="form-control" placeholder="Enter the state in which your highschool was located">
+        </div>
+        <div class="form-group"> <!--This is for degree-->
+            <label id="degree-label" for="degree">Highest Degree Obtained</label>
+            <input type="text" name="degree" id="degree" class="form-control" placeholder="Enter the highest degree you have obtained">
+        </div>
+        <div class="form-group"> <!--This is for current professions-->
+            <label id="profession-label" for="profession">Current Profession</label>
+            <input type="text" name="profession" id="profession" class="form-control" placeholder="Enter your current job title">
+        </div>
+        <div class="form-group"> <!--This is for course evaluation-->
+            <label id="course-label" for="courses">Were courses on coding and computing offered in your high school?</label>
+            <input type="text" name="courses" id="courses" class="form-control" placeholder="Please describe">
+        </div>
+        <div class="form-group"> <!--This is for math-->
+            <label id="math-label" for="math">What was the highest level of math offered at your high school?</label>
+            <input type="text" name="math" id="math" class="form-control" placeholder="Please describe">
+        </div>
+        <div class="form-group"> <!--This is for computing-->
+            <label id="computing-label" for="computing">Did the course offerings at your high school affect your entry into computing and coding as a hobby or profession?</label>
+            <input type="text" name="computing" id="computing" class="form-control" placeholder="Please describe">
+        </div>
+        <div class="form-group"> <!--This is for education experience-->
+            <label id="education-label" for="education">Did the place in which you attended k-12 schooling affect your education in any way that you recognize?</label>
+            <input type="text" name="education" id="education" class="form-control" placeholder="Please describe">
         </div>
     </form>
 
